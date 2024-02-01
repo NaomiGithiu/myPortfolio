@@ -10,12 +10,13 @@
     <main>
         <!-- nav-links -->
         <nav id="navbar">
-            <ul class="lists">
+            <ul class="lists" id="dropdownclick">
               <li><a href="#welcome-section">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#service">Service</a></li>
-                <li><a href="portfolio">Portfolio</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li class="dropdownicon"><a href="javascript:void(0);" onclick="dropdownmenu()">&#9776;</a></li>
             </ul>
         </nav>
         <!-- welcome section -->
@@ -43,11 +44,13 @@
             <div class="row">
               <div class="contact">
                 <p>githiunaomi@gmail.com</p>
-                <p>phone: +254748830</p>
+                <p>phone: +254748830110</p>
                 <p>Github: NaomiGithiu</p>
                 <p>Degree: BIT</p>
-                <div><button class="btn">Download cv</button></div>
-                <button class="btn">Hire me</button>
+                <div class="btn">
+                  <button class="btn">Download cv</button>
+                  <a href="#contact"><button class="btn">Hire me</button></a>
+                </div>
               </div>
   
               <div class="skills">
@@ -87,14 +90,37 @@
         </section>
 
         <!-- project section -->
-        <section id="projects">
+        <section id="portfolio">
             <h2>Here are some of my projects</h2>
-            <a class="project-tile" href="https://codepen.io/freeCodeCamp/full/zNqgVx">
-                <img src="" alt=""project>
-            </a>
+            <div class="projects">
+              <img src="/images/building.png" alt="buildings built using css positioning">
+              <img src="/images/penguin.png" alt="a penguin built using css positioning and animation">
+              <img src="/images/surveyForm.png" alt="a survey form">
+            </div>
+            <div class="social-links">
+              <li id="profile-link">
+                <a href="https://github.com/NaomiGithiu" target="_blank">Github</a>
+              </li>
+              <li id="profile-link">
+                <a href="https://freecodecamp.com/NaomiGithiu" target="_blank">Freecodecamp</a>
+              </li>
+            </div>
+        </section>
 
-            <li id="profile-link"><a href="https://github.com/NaomiGithiu" target="_blank">github.com</a></li>
+        <!-- contact section -->
+        <section id="contact">
+            <p class="text">you can contact me through:</p>
+            <div class="contact">
+              <a href="mailto:githiunaomi@gmail.com">githiunaomi@gmail.com</a>
+              <a href="Tell:+254748830110">phone: +254748830110</a>
+              <a href="https://github.com/NaomiGithiu" target="_blank">Github: NaomiGithiu</a>
+            </div>
+            <div class="btn">
+              <button class="btn">Download cv</button>
+              <button class="btn">Hire me</button>
         </section>
     </main>
+
+    <script src="/script.js"></script>
   </body>
 </html>
